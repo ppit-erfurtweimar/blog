@@ -1,31 +1,29 @@
-title:            Notepad
-description:      "Blogging is fun"
-logo:             logo.png
-disqus_shortname: hmfaysal
+title:            PPIT Erfurt - Weimar
+description:      "Deskripsi Blog PPIT Efwe"
+logo:             ppit-efwe.png
+disqus_shortname: 
 share:            true
-dropcap:			true
+dropcap:			    true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-url:        	  /Notepad
+url:        	  /blog
 
 # Owner/author information
 owner:
-  name:           Hossain Mohd Faysal
-  avatar:         hmfaysal.jpg
-  email:          hmfaysal@alum.mit.edu
+  name:           PPIT Erfurt - Weimar
+  avatar:         ppit-efwe2.png
+  email:          efwethueringen@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Awesome Dude, Awesome Life
+  description:    
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        hmfaysal
-  facebook:       hmfaysal
-  github:         hmfaysal      
-  instagram:      hmfaysal
+  facebook:       groups/506774769390057/   
+  instagram:      ppit.erfurtweimar/
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/u/0/102602916593522619858
+  google_plus:    
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UA-39365944-7
+google_analytics:   
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
@@ -37,15 +35,15 @@ links:
     url: /
     external: false
     icon: home
-  - title: Featured Posts
-    url: /featured
+
+  - title: Posts
+    url: /posts
+
   - title: Categories
     url: /categories
-  - title: About
-    url: /about
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Dhaka
+timezone:    Europe/Berlin
 future:      true
 highlighter: pygments
 markdown:    kramdown
@@ -53,7 +51,7 @@ paginate:    5
 paginate_path: "page:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
+permalink:   /:categories/:year/:month/:day/:title/
 
 kramdown:
   auto_ids: true
@@ -71,8 +69,8 @@ kramdown:
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://hmfaysal.github.io/Notepad/'
-  relativeLinks: 'http://hmfaysal.github.io/Notepad/links.jsonp'
+  siteurl: 'http://ppit-erfurtweimar.github.io/blog/'
+  relativeLinks: 
   media: 'images'
   metadata:
     _posts:
@@ -81,31 +79,37 @@ prose:
           label: "Published"
           element: "checkbox"
           value: "true"
+
       - name: "layout"
         field:
           element: "hidden"
           label: "Layout"
           value: "post"
+
       - name: "title"
         field:
           label: "Title"
           element: "text"
           value: "An Awesome Headline!"
+
       - name: "description"
         field:
           element: "text"
           label: "Description"
           placeholder: "Enter Post Description"
+
       - name: "headline"
         field:
           element: "text"
           label: "beadline"
           placeholder: "Enter Post Headline"
+
       - name: "modified"
         field:
           element: "text"
           label: "Has this page been modified?"
           placeholder: "YYYY-MM-DD"
+
       - name: "categories"
         field:
           element: "multiselect"
@@ -113,18 +117,18 @@ prose:
           placeholder: "Choose categories"
           value: personal
           options:
-            - name: "Personal"
-              value: personal
-            - name: "Engineering"
-              value: engineering
-            - name: "Physics"
-              value: physics
-            - name: "Psychology"
-              value: psychology
-            - name: "Interesting"
-              value: interesting
-            - name: "Web-Development"
-              value: webdevelopment
+            - name: "Trending"
+              value: trending
+            - name: "Article"
+              value: article
+            - name: "Review"
+              value: review
+            - name: "Shop"
+              value: shop
+            - name: "Interest"
+              value: interest
+            - name: "Event"
+              value: event
           alterable: true
       - name: "tags"
         field:
@@ -145,7 +149,7 @@ prose:
         field:
           element: "checkbox"
           label: "Featured?"
-          value: false
+          value: true
       - name: "comments"
         field:
           element: "checkbox"
